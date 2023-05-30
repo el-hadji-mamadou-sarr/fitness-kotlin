@@ -12,22 +12,17 @@
         android:layout_height="48dp"
         android:src="@drawable/user"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="8dp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/post_fullname"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="159dp"
+        android:layout_height="19dp"
         android:text="Fullname"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/post_avatar"
-        app:layout_constraintEnd_toStartOf="@+id/post_date"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/post_date"
@@ -35,32 +30,28 @@
         android:layout_height="wrap_content"
         android:text="Date"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/post_fullname"
-        />
+        app:layout_constraintStart_toEndOf="@+id/post_fullname"
+        app:layout_constraintTop_toTopOf="@id/post_fullname" />
 
     <TextView
         android:id="@+id/post_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="298dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/post_avatar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/post_fullname"
-        app:layout_constraintBottom_toTopOf="@id/post_image"
-        />
+        app:layout_constraintTop_toBottomOf="@id/post_fullname" />
 
     <ImageView
         android:id="@+id/post_image"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_width="304dp"
+        android:layout_height="193dp"
         android:scaleType="centerCrop"
         android:src="@drawable/image"
-        app:layout_constraintStart_toEndOf="@id/post_avatar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/post_text"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintStart_toEndOf="@id/post_avatar"
+        app:layout_constraintTop_toBottomOf="@id/post_text"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

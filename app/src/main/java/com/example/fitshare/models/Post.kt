@@ -10,6 +10,5 @@ data class Post(
 ){
     // Empty constructor required for Firestore deserialization
     constructor() : this( "", "", "",Timestamp.now())
-    constructor(postText: String, creator: String?, createdAt: Timestamp) : this(postText, null,
-        creator.toString(), createdAt)
+    constructor(postText: String, creator: String?, createdAt: Timestamp) : this(postText, null, creator.toString(), createdAt)
 }
